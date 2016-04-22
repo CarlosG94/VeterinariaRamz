@@ -37,14 +37,14 @@
           </ul>
 
           <!--TODO: Search in DB-->
-          <form class="navbar-form navbar-left" role="search">
+         <!--  <form class="navbar-form navbar-left" role="search">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search for...">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button">Search</button>
                 </span>
-            </div><!-- /input-group -->
-          </form>
+            </div>
+          </form> -->
 
           <!--TODO: Signed in as <user> -->
             <p class="navbar-text pull-right">Signed in as <a href="profile.html" class="navbar-link">Carlos Gutierrez</a></p>
@@ -62,16 +62,19 @@
             
 
             <div class="shadow-wrap">
-                <div class="top-div-title">Sample Button</div>
+                <div class="top-div-title">Clients</div>
                 <div class="postfeed-wrap">
                     <!--TODO: Post in server a 1-->
                     <div class="post-form">
                         <form id="form">
                             <div class="form-group">
                                 <textarea name="post" id="post-content" 
-                                class="form-control" placeholder="At what time can we pick up your dog?"></textarea>
+                                class="form-control" placeholder="Search for..."></textarea>
                             </div>
-                            <button type="submit" id="post-btn" class="btn btn-primary" disabled>Post</button>
+                            <button type="submit" id="post-btn" class="btn btn-primary" style="margin-bottom: 10px;">Search</button>
+                            <a href="registerclient.html" class="btn btn-primary btn-secondary" style="width: 33%;">Add Client</a>
+                            <a href="mascot.html" class="btn btn-primary btn-secondary" style="width: 33%;">Add Mascot</a>
+                            <a href="delete.html" class="btn btn-primary btn-secondary" style="width: 32%;">Delete</a>
                         </form>
                     </div>
 

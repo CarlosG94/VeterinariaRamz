@@ -1,8 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Carlos Gutierrez
- */
+
+print $_GET['email'];
+print $_GET['password'];
 
 switch ($_POST["action"]) {
 case "Register":
@@ -31,7 +30,7 @@ function display_error($conn){
 function connect_to_db(){
     ini_set('display_errors', 1);
     session_start();
-    $conn = new mysqli('localhost', 'root', 'root', 'VeterinariaRamz');
+    $conn = new mysqli('localhost', 'vet', '666-999', 'VeterinariaRamz');
     if ($conn->connect_errno > 0) {
         display_error($conn);
     }
@@ -40,9 +39,9 @@ function connect_to_db(){
 
 function register() {
     $conn = connect_to_db();
-    $email = $conn->real_escape_string($_POST["email"]);
+    $email = $conn->real_escape_string($_GET"email"]);
     $password = $_POST["password"];
-    $sql = 'SELECT hash FROM `users` WHERE email = \''.$email.'\'';
+    $sql = 'SELECT email FROM 'users' WHERE email = \''.$email.'\'';
     $rs = $conn->query($sql);
     if ($rs->num_rows != 0) {
         header("HTTP/1.1 404 - Not Found");

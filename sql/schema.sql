@@ -1,5 +1,5 @@
-DROP SCHEMA VeterinariaRamz;
-CREATE SCHEMA VeterinariaRamz;
+DROP DATABASE VeterinariaRamz;
+CREATE DATABASE VeterinariaRamz;
 USE VeterinariaRamz;
 
 CREATE TABLE User (

@@ -38,6 +38,7 @@ textarea {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     color: #F0F0F0;
+    margin-top: -10px; 
 }
 
 .bottom-div-actions {
@@ -90,6 +91,14 @@ textarea {
     color: #F0F0F0 !important;
 }
 
+.btn-secondary {
+    background-color: hsla(208, 46%, 46%, 0.84) !important;
+}
+
+.btn-secondary:hover {
+    background-color: hsla(208, 56%, 46%, 1) !important;
+}
+
 #post-btn {
 /*    display: block;
     float: right;*/
@@ -102,4 +111,8 @@ textarea {
 .navbar-inverse {
     background-color: #353535 !important;
     border-radius: 0px !important;
+}
+
+.button {
+    width:100% !important !;
 }
